@@ -54,3 +54,209 @@ iframe.baten_all {
   border: 1px black;
   background-color: beige;
 }
+
+/* ---- */
+
+.header {
+  background-color: #1d6b34 !important;
+  height: 80px;
+}
+
+.header1 {
+  padding-top: 10px;
+}
+
+.footer {
+  height: 120px;
+  background-color: #1d6b34;
+  margin-top: 5px;
+}
+
+.title {
+  color: white;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.logo1 {
+  position: relative;
+  height: 30px;
+  z-index: 2;
+  margin: 10px;
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-5 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.subheader {
+  padding: 20px;
+  margin: 5px;
+}
+
+.boxaa {
+  padding: 10px;
+  margin-left: 5px;
+}
+
+.boxbb {
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.boxcc {
+  padding: 10px;
+  margin-left: 5px;
+}
+
+.boxdd {
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/****************************** SIDEBAR OPMAAK *************************************/
+.sidebar {
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(29, 107, 52, 0.6);
+}
+
+.sb_container {
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+.SB_header {
+  color: white;
+  padding: 15px;
+}
+
+.sb_switcher.uk-subnav {
+  margin-left: 0px !important;
+  padding-top: 5px !important;
+}
+
+.row3,
+.row4,
+.row5,
+.row6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 20px;
+  border: 1px #1d6b34 solid;
+  padding: 20px;
+}
+
+.row31,
+.row41,
+.row42,
+.row43,
+.row51,
+.row52,
+.row53,
+.row61,
+.row62,
+.row63 {
+  border-left: 6px solid #1d6b34;
+  padding: 20px;
+}
+
+.uk-accordion-title {
+  font-size: 12px;
+}
+/****************************** // SIDEBAR OPMAAK *************************************/
+
+.mainViewerTable {
+  visibility: hidden;
+}
+
+.browser {
+  min-height: 100vh;
+  color: #050505;
+  text-align: center;
+  border: 3px solid green;
+}
+
+.spinner {
+  height: 100vh;
+  color: #fff;
+}
+
+td,
+th {
+  overflow: hidden;
+}
+
+iframe {
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.comp {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.schemeren {
+  opacity: 0.2;
+  transition: opacity 0.7s;
+}
+
+.verlichten {
+  opacity: 1;
+  transition: opacity 0.7s;
+}
+
+.clsSelectControl {
+  width: auto !important;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+#button_prmt {
+  background-color: #1d6b34;
+  color: white;
+}
+
+.allewaarden,
+.prmt_text {
+  display: none;
+}
+
+.prmt.prmt_jaar {
+  padding-left: 10px;
+}
+
+/* ************************************** UI KIT specifieke opmaak ****************************************** */
+
+.uk-navbar-container.uk-navbar {
+  background-color: #1d6b34 !important;
+}
+
+.uk-navbar-center h2,
+.uk-navbar-nav > li > a {
+  color: white;
+}
+
+.uk-navbar-nav > li:hover > a,
+.uk-navbar-nav > li > a.uk-open,
+.uk-navbar-nav > li > a:focus {
+  color: yellow;
+}
+/* ************************************** // UI KIT specifieke opmaak ****************************************** */
