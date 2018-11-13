@@ -1,0 +1,167 @@
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/css/uikit.min.css"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit.min.js"></script>
+    <script src="https://cdn.bootcss.com/uikit/3.0.0-rc.3/js/uikit-icons.js"></script>
+  </head>
+
+  <body>
+    <div class="main1">
+      <div class="uk-flex uk-flex-center">
+        <div class="header uk-flex uk-flex-middle uk-flex-center uk-width-3-4">
+          <div>OCW Bedrijfsvoeringsdashboard</div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="uk-flex uk-flex-center">
+        <div
+          class="card-content uk-width-3-4 uk-height-large uk-card uk-card-default uk-card-body"
+        >
+          <div class="divider"></div>
+          <div class="uk-flex uk-flex-center">
+            <div class="but1 uk-inline">
+              <button
+                class="uk-button uk-button-default uk-button-large"
+                type="button"
+              >
+                Fin
+              </button>
+              <div uk-dropdown>
+                <ul class="uk-nav uk-dropdown-nav">
+                  <li><a href="#" class="lasten">Lasten</a></li>
+                  <li><a href="#" class="baten">Baten</a></li>
+                  <li><a href="#" class="facturen">Facturen</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="but2 uk-inline">
+              <button
+                class="uk-button uk-button-default uk-button-large"
+                type="button"
+              >
+                HR
+              </button>
+              <div uk-dropdown>
+                <ul class="uk-nav uk-dropdown-nav">
+                  <li><a href="#" class="pvb">PVB</a></li>
+                  <li><a href="#" class="verzuim">Ziekteverzuim</a></li>
+                  <li><a href="#" class="formatie">Formatie & Bezetting</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="uk-inline">
+              <button
+                class="uk-button uk-button-default uk-button-large"
+                type="button"
+              >
+                Processen
+              </button>
+              <div uk-dropdown>
+                <ul class="uk-nav uk-dropdown-nav">
+                  <li><a href="#">Item</a></li>
+                  <li><a href="#">Item</a></li>
+                  <li><a href="#">Item</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main2">
+      <div class="sidebar uk-width-1-3 uk-height-viewport">
+        <div class="filters facturen">
+          <div class="box">Box 1</div>
+          <div class="box">Box 2</div>
+          <div class="box">Box 3</div>
+        </div>
+        <div class="filters budget">
+          <div class="box">Box 4</div>
+          <div class="box">Box 5</div>
+          <div class="box">Box 6</div>
+        </div>
+        <div class="filters hresources">
+          <div class="box">Box 1</div>
+          <div class="box">Box 2</div>
+          <div class="box">Box 3</div>
+        </div>
+      </div>
+
+      <div class="card card-1">
+        <div class=" header header1">
+          <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left">
+              <img
+                class="logo1"
+                tabindex="0"
+                class="image"
+                src="https://werknet.denhaag.nl/style%20library/Branding/components/gdh_suitebar/images/gdh_logo.png"
+              />
+            </div>
+            <div class="uk-navbar-center">
+              <div class="title">OCW bedrijfsvoeringsdashboard</div>
+            </div>
+          </nav>
+        </div>
+
+        <div class=" header header2">
+          <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left">
+              <ul class="uk-navbar-nav">
+                <li>
+                  <a class="buttonsb uk-navbar-toggle" href="#">
+                    <span uk-navbar-toggle-icon></span>
+                    <span class="uk-margin-small-left">Menu</span>
+                  </a>
+                </li>
+                <li><a class="lasten" href="#">Lasten</a></li>
+                <li><a class="baten" href="#">Baten</a></li>
+              </ul>
+            </div>
+
+            <div class="uk-navbar-center"><h2>Facturen</h2></div>
+
+            <div class="uk-navbar-right">
+              <ul class="uk-navbar-nav">
+                <li><a class="username" href="#"></a></li>
+                <li>
+                  <a href="#"><i class="fa fa-home fa-lg"></i></a>
+                </li>
+                <li>
+                  <a href="#">Export</a>
+                  <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                      <li>
+                        <a
+                          class="excel"
+                          href="#"
+                          onclick="javascript:gCognosViewer.getRV().viewReport('spreadsheetML')"
+                          >Excel</a
+                        >
+                      </li>
+                      <li><a class="pdf" href="#">PDF</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="wrapper uk-height-viewport"></div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

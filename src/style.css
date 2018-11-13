@@ -1,0 +1,56 @@
+.header {
+  height: 100px;
+  font-size: 30px;
+  background-color: green;
+  color: white;
+}
+.header2 {
+  height: 50px;
+  font-size: 30px;
+  background-color: green;
+  color: white;
+}
+.divider {
+  height: 20px;
+}
+
+.button {
+  margin-right: 10px;
+  width: 100px;
+}
+.but1 {
+  margin-right: 10px;
+}
+.but2 {
+  margin-right: 10px;
+}
+
+.main2 {
+  display: none;
+}
+.uk-button {
+  background-color: rgb(42, 165, 97);
+  border: none;
+  color: white;
+}
+.sidebar {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background-color: antiquewhite;
+}
+iframe.baten_all {
+  overflow: auto;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  border: 1px black;
+  background-color: beige;
+}

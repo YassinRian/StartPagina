@@ -1,2 +1,0 @@
-# StartPagina
-Created with CodeSandbox
