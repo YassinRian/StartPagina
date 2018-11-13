@@ -17,11 +17,6 @@
 
   <body>
     <div class="main1">
-      <div class="uk-flex uk-flex-center">
-        <div class="header uk-flex uk-flex-middle uk-flex-center uk-width-3-4">
-          <div>OCW Bedrijfsvoeringsdashboard</div>
-        </div>
-      </div>
       <div class="divider"></div>
       <div class="uk-flex uk-flex-center">
         <div
@@ -78,24 +73,249 @@
         </div>
       </div>
     </div>
+    <!-- Main 2 wordt gebruikt voor Rapporten -->
     <div class="main2">
-      <div class="sidebar uk-width-1-3 uk-height-viewport">
-        <div class="filters facturen">
-          <div class="box">Box 1</div>
-          <div class="box">Box 2</div>
-          <div class="box">Box 3</div>
-        </div>
-        <div class="filters budget">
-          <div class="box">Box 4</div>
-          <div class="box">Box 5</div>
-          <div class="box">Box 6</div>
-        </div>
-        <div class="filters hresources">
-          <div class="box">Box 1</div>
-          <div class="box">Box 2</div>
-          <div class="box">Box 3</div>
+      <!-- SIDEBAR ---------------------------------- -->
+      <div class="sidebar card-5 uk-width-auto uk-height-1-1">
+        <h3 class="SB_header uk-text-center">Filters</h3>
+        <button id="button_prmt" class="button_prmt uk-button uk-width-1-1">
+          Ververs dashboard
+        </button>
+        <div class="sb_container">
+          <ul
+            class="sb_switcher uk-subnav uk-subnav-pill"
+            uk-switcher="animation: uk-animation-fade"
+          >
+            <li><a href="#" class="org_button">Organisatie Niveau's</a></li>
+            <li>
+              <a href="#" class="proj_button">Prog.begr & Activiteiten</a>
+            </li>
+          </ul>
+
+          <!-- Jaar prompt -->
+          <div class="row3">
+            <div class="row31">
+              <div class="group">
+                <input
+                  id="input_jaar"
+                  type="text"
+                  required
+                  autocomplete="off"
+                />
+                <span class="highlight"></span> <span class="bar"></span>
+                <label>Selecteer Jaar</label>
+              </div>
+            </div>
+          </div>
+          <!-- // Jaar prompt -->
+
+          <!-- Organisatie Niveau's Filters ----------- -->
+          <ul class="uk-switcher">
+            <li>
+              <!-- Accordion KPL ----------- -->
+              <div class="row4">
+                <ul uk-accordion>
+                  <li class="uk-open">
+                    <a class="uk-accordion-title" href="#"
+                      >Apparaat baten org. niveau 1</a
+                    >
+                    <div class="uk-accordion-content">
+                      <div class="row41">
+                        <div class="group">
+                          <input
+                            id="input_kpl1"
+                            type="text"
+                            required
+                            autocomplete="off"
+                          />
+                          <span class="highlight"></span>
+                          <span class="bar"></span>
+                          <label>Selecteer organisatie niveau</label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="uk-accordion-title" href="#"
+                      >Apparaat baten org. niveau 2</a
+                    >
+                    <div class="uk-accordion-content">
+                      <div class="row42">
+                        <div class="group">
+                          <input
+                            id="input_kpl2"
+                            type="text"
+                            required
+                            autocomplete="off"
+                          />
+                          <span class="highlight"></span>
+                          <span class="bar"></span>
+                          <label>Selecteer organisatie niveau</label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="uk-accordion-title" href="#"
+                      >Apparaat baten org. niveau 3</a
+                    >
+                    <div class="uk-accordion-content">
+                      <div class="row43">
+                        <div class="group">
+                          <input
+                            id="input_kpl3"
+                            type="text"
+                            required
+                            autocomplete="off"
+                          />
+                          <span class="highlight"></span>
+                          <span class="bar"></span>
+                          <label>Selecteer organisatie niveau</label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- //Accordion KPL -->
+
+              <!-- //Accordion KDR -->
+              <div class="row5">
+                <!-- Accordion KDR -->
+                <ul uk-accordion>
+                  <li class="uk-open">
+                    <a class="uk-accordion-title" href="#"
+                      >Programma baten org. niveau 1</a
+                    >
+                    <div class="uk-accordion-content">
+                      <div class="row51">
+                        <div class="group">
+                          <input
+                            id="input_kdr1"
+                            type="text"
+                            required
+                            autocomplete="off"
+                          />
+                          <span class="highlight"></span>
+                          <span class="bar"></span>
+                          <label>Selecteer organistatie niveau</label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="uk-accordion-title" href="#"
+                      >Programma baten org. niveau 2</a
+                    >
+                    <div class="uk-accordion-content">
+                      <div class="row52">
+                        <div class="group">
+                          <input
+                            id="input_kdr2"
+                            type="text"
+                            required
+                            autocomplete="off"
+                          />
+                          <span class="highlight"></span>
+                          <span class="bar"></span>
+                          <label>Selecteer organistatie niveau</label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="uk-accordion-title" href="#"
+                      >Programma baten org. niveau 3</a
+                    >
+                    <div class="uk-accordion-content">
+                      <div class="row53">
+                        <div class="group">
+                          <input
+                            id="input_kdr3"
+                            type="text"
+                            required
+                            autocomplete="off"
+                          />
+                          <span class="highlight"></span>
+                          <span class="bar"></span>
+                          <label>Selecteer organistatie niveau</label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- // Accordion -->
+            </li>
+            <!-- // Organisatie Niveau's Filters ----------- -->
+            <li>
+              <div class="row6">
+                <!-- Accordion Projecten -->
+                <ul uk-accordion>
+                  <li>
+                    <a class="uk-accordion-title" href="#">Programma's</a>
+                    <div class="uk-accordion-content">
+                      <div class="row61">
+                        <div class="group">
+                          <input
+                            id="input_prg"
+                            type="text"
+                            required
+                            autocomplete="off"
+                          />
+                          <span class="highlight"></span>
+                          <span class="bar"></span>
+                          <label>Selecteer Programma</label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="uk-accordion-title" href="#">Produkten</a>
+                    <div class="uk-accordion-content">
+                      <div class="row62">
+                        <div class="group">
+                          <input
+                            id="input_prod"
+                            type="text"
+                            required
+                            autocomplete="off"
+                          />
+                          <span class="highlight"></span>
+                          <span class="bar"></span>
+                          <label>Selecteer Produkt</label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="uk-accordion-title" href="#">Deelprodukten</a>
+                    <div class="uk-accordion-content">
+                      <div class="row63">
+                        <div class="group">
+                          <input
+                            id="input_deelprg"
+                            type="text"
+                            required
+                            autocomplete="off"
+                          />
+                          <span class="highlight"></span>
+                          <span class="bar"></span>
+                          <label>Selecteer Deelprodukten</label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <!-- /Accordion -->
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
+      <!--
+        //SIDEBAR -----------------------------------------------------------------------------------------------------------------------
+      -->
 
       <div class="card card-1">
         <!--
