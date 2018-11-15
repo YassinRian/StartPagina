@@ -31,22 +31,25 @@ $x(".lasten").click(function() {
 });
 
 $x(".baten").click(function() {
-  $x("iframe.lasten_all, .sidebar, .main1").hide();
+  $x("iframe.lasten_all, .sidebar, .main1, .cognos_portaal").css(
+    "display",
+    "none"
+  );
   $x(".filters")
     .not(".budget")
     .hide();
-  $x(".main2").show(300);
+  $x(".main2").css("display", "block");
 
   if ($x("iframe.baten_all").length > 0) {
-    $x("iframe.baten_all").show();
+    $x("iframe.baten_all").css("display", "block");
   } else {
     lasten("baten_all", URLs.baten);
   }
 });
 
 $x(".fa.fa-home").click(function() {
-  $x(".main2").hide(300);
-  $x(".main1").show(300);
+  $x(".main2").css("display", "none");
+  $x(".main1, .cognos_portaal").css("display", "block");
 });
 
 $x(".buttonsb").click(function() {
