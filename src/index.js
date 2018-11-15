@@ -2,48 +2,27 @@ import $x from "jquery";
 
 const URLs = {
   baten: "https://rl6330qqqo.codesandbox.io/",
-  lasten:
-    "?b_action=cognosViewer&ui.action=run&ui.object=CAMID(%22Haagnet%3au%3a19c7760545dd164f9fbadf6d8830de2f%22)%2ffolder%5b%40name%3d%27Persoonlijke%20mappen%27%5d%2ffolder%5b%40name%3d%27BudgetUitputiing%20Package%27%5d%2ffolder%5b%40name%3d%27Yassin%27%5d%2ffolder%5b%40name%3d%27laatste%20versie%27%5d%2ffolder%5b%40name%3d%27TEST%20FOLDER%27%5d%2freport%5b%40name%3d%27Lasten_dashboard%27%5d&ui.name=Lasten_dashboard&run.outputFormat=&run.prompt=true"
+  lasten: "https://rl6330qqqo.codesandbox.io/"
 };
 
 $x(".lasten").click(function() {
+  $x("iframe.baten_all, .main1, .cognos_portaal").css("display", "none");
+  $x(".main2").css("display", "block");
   if ($x("iframe.lasten_all").length > 0) {
-    $x("iframe.baten_all").hide();
-    $x("iframe.lasten_all").show();
-    $x(".main1").hide(300);
-    $x(".main2").show(300);
+    $x("iframe.lasten_all").css("display", "block");
   } else {
-    $x(".main1").hide(200);
-    $x(".main2").show(300);
-    if ($x("iframe.baten_all").length > 0) {
-      $x("iframe.baten_all").hide();
-      $x(".filters")
-        .not(".budget")
-        .hide();
-      lasten("lasten_all", URLs.lasten);
-    } else {
-      $x(".filters")
-        .not(".budget")
-        .hide();
-      lasten("lasten_all", URLs.lasten);
-    }
+    iframe("lasten_all", URLs.lasten);
   }
 });
 
 $x(".baten").click(function() {
-  $x("iframe.lasten_all, .sidebar, .main1, .cognos_portaal").css(
-    "display",
-    "none"
-  );
-  $x(".filters")
-    .not(".budget")
-    .hide();
+  $x("iframe.lasten_all, .main1, .cognos_portaal").css("display", "none");
   $x(".main2").css("display", "block");
 
   if ($x("iframe.baten_all").length > 0) {
     $x("iframe.baten_all").css("display", "block");
   } else {
-    lasten("baten_all", URLs.baten);
+    iframe("baten_all", URLs.baten);
   }
 });
 
@@ -56,7 +35,7 @@ $x(".buttonsb").click(function() {
   $x(".sidebar").toggle(300);
 });
 
-function lasten(naam, url) {
+function iframe(naam, url) {
   var iframe = document.createElement("iframe");
   iframe.className = naam;
   iframe.src = url;

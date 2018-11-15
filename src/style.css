@@ -23,7 +23,8 @@
   color: white;
 }
 
-iframe.baten_all {
+iframe.baten_all,
+iframe.lasten_all {
   overflow: auto;
   height: 100vh;
   width: 100%;
