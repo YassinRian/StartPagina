@@ -1,57 +1,48 @@
-.button {
-  margin-right: 10px;
-  width: 100px;
+<style>
+
+.RVContent {overflow:hidden !important;} /*nodig voor het verwijderen van de scroll bar van de parent pagina*/ 
+
+.card-content{
+border-radius: 20px;
+height: 500px;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.5)), color-stop(100%,rgba(255,255,255,0.5))), url('https://images.unsplash.com/photo-1521709986901-579827f9924a?ixlib=rb-0.3.5&s=b1f74b8bb1c2bc0a99fe5948ec1fe299&auto=format&fit=crop&w=1998&q=80') repeat 0 0;
+background: -webkit-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%), url('https://images.unsplash.com/photo-1521709986901-579827f9924a?ixlib=rb-0.3.5&s=b1f74b8bb1c2bc0a99fe5948ec1fe299&auto=format&fit=crop&w=1998&q=80') repeat 0 0;
+-o-object-fit: scale-down;
+   object-fit: scale-down;
 }
 
-.divider {
-  height: 20px;
-}
 
-.but1 {
-  margin-right: 10px;
-}
-.but2 {
-  margin-right: 10px;
-}
-
-.main2 {
-  display: none;
-}
-.uk-button {
-  background-color: rgb(42, 165, 97);
-  border: none;
-  color: white;
-}
-
-iframe.baten_all,
-iframe.lasten_all {
-  overflow: auto;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-/* ---- */
-
-.header1 {
-  background-color: #1d6b34 !important;
-  height: 80px;
+.header {
+  height: 130px;
   padding-top: 10px;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.7)), color-stop(100%,rgba(255,255,255,0.7))), url('https://images.unsplash.com/photo-1521709986901-579827f9924a?ixlib=rb-0.3.5&s=b1f74b8bb1c2bc0a99fe5948ec1fe299&auto=format&fit=crop&w=1998&q=80') repeat 0 0;
+background: -webkit-linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 100%), url('https://images.unsplash.com/photo-1521709986901-579827f9924a?ixlib=rb-0.3.5&s=b1f74b8bb1c2bc0a99fe5948ec1fe299&auto=format&fit=crop&w=1998&q=80') repeat 0 0;
+-o-object-fit: scale-down;
+   object-fit: scale-down;
 }
 
+.uk-card-but {
+  margin: 10px;
+}
 .footer {
   height: 120px;
   background-color: #1d6b34;
   margin-top: 5px;
 }
 
-.title {
-  color: white;
+
+.title, .dashboard_naam {
+  color: #1d6b34 !important;
   font-size: 30px;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.dashboard_naam {
+  color: #1d6b34 !important;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .logo1 {
@@ -62,15 +53,14 @@ iframe.lasten_all {
 }
 
 .card-1 {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  -o-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 /* ************************************** UI KIT specifieke opmaak ****************************************** */
-
-.uk-navbar-container.uk-navbar {
-  background-color: #1d6b34 !important;
-}
 
 .uk-navbar-center h2,
 .uk-navbar-nav > li > a {
@@ -80,6 +70,48 @@ iframe.lasten_all {
 .uk-navbar-nav > li:hover > a,
 .uk-navbar-nav > li > a.uk-open,
 .uk-navbar-nav > li > a:focus {
-  color: yellow;
+  color: white;
 }
+
+
 /* ************************************** // UI KIT specifieke opmaak ****************************************** */
+
+.divider1 {
+    height: 100px;
+}
+.divider2 {
+    height: 50px;
+}
+
+
+
+
+
+.main2 {
+    display: none;
+}
+
+iframe {
+    height: 85vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.header_menu, .sidebar_button {
+display: none;
+}
+
+.browser {
+  min-height: 100vh;
+  color: #050505;
+  text-align: center;
+  border: 3px solid green;
+}
+
+.mainViewerTable {
+display: none;
+}
+
+</style>
