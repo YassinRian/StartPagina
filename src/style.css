@@ -1,10 +1,16 @@
 <style>
 
+
+.icon {
+  fill: green !important;
+}
+
 .RVContent {overflow:hidden !important;} /*nodig voor het verwijderen van de scroll bar van de parent pagina*/ 
 
 .card-content{
+  padding: 100px;
 border-radius: 20px;
-height: 500px;
+/*height: 500px;*/
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.5)), color-stop(100%,rgba(255,255,255,0.5))), url('https://images.unsplash.com/photo-1521709986901-579827f9924a?ixlib=rb-0.3.5&s=b1f74b8bb1c2bc0a99fe5948ec1fe299&auto=format&fit=crop&w=1998&q=80') repeat 0 0;
 background: -webkit-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%), url('https://images.unsplash.com/photo-1521709986901-579827f9924a?ixlib=rb-0.3.5&s=b1f74b8bb1c2bc0a99fe5948ec1fe299&auto=format&fit=crop&w=1998&q=80') repeat 0 0;
 -o-object-fit: scale-down;
